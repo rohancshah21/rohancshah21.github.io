@@ -8,9 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="src/styles.css" />
   <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+
   <div id="first">
     hi, i'm rohan
   </div>
@@ -18,14 +20,36 @@
   <div id="wrapper">
 
 
-    <div id="short-bio">
-      student passionate about fintech, quantitative finance, and swe.
-      <br>satiated by personal growth.
+    <div class="navbar" id="navbar">
+      <a onclick="showHome()">Home</a>
+      <a onclick="showAboutMe()">About Me</a>
+      <a onclick="showExperiences()">Experiences</a>
+      <a onclick="showContact()">Contact</a>
     </div>
     <hr>
 
     <br>
-    <div id="more-abt-me">
+
+    <div id="home" class="content">
+      hey! my name's rohan, and i'm a current junior at Cornell University!
+      <ul>
+        <li>i'm a student at <u>cornell university</u> studying computer science in the college of engineering</li>
+      </ul>
+
+      outside of school
+      <ul>
+        <li>i enjoy finding <a href="https://open.spotify.com/user/da9om7ik3jlnwbujz2zzpoyno" target="_blank"
+            rel="noopener noreferrer">new music to listen to</a>,
+          lifting, and playing with my dog rafa!</li>
+      </ul>
+
+      i'm satiated by personal growth, learning new things, and being thrown off the deep end.
+
+      <!-- <img src="assets/Shah_Rohan_Headshot.png" class="responsive-image" id="headshot"> -->
+
+    </div>
+
+    <div id="more-abt-me" class="content">
       more about me
       <ul>
         <li>i'm a student at <u>cornell university</u> studying computer science in the college of engineering</li>
@@ -33,30 +57,39 @@
           to
           optimally trade
         </li>
+        <li>technically, i'm proficient in python and java, with experience in javascript/typescript, c++, html/css, sql</li>
       </ul>
     </div>
 
-    <div id="stuff-ive-done">
+    <div id="stuff-ive-done" class="content">
       stuff i've done
       <ul>
-        <li>built a <u>cloud trading bot</u> supporting a long straddle options strategy</li>
-        <li>redeveloped an internal autosys job management tool at <u>fidelity investments</u></li>
-        <li>analyzed the efficiency of momentum vs. mean reverting trading algorithms in <u>generating portfolio
-            alpha</u>
+        <span id="experience-title"><b>trillium trading — summer 2023 — new york city, ny</b></span>
+        <li>i developed a proxy service capable of calculating implied volatilities and options Greeks for over 6,000 listed options</li>
+        <li>using c++, i integrated real-time OPRA and UTP market data feeds into proxy connected through a Linux server, enabling <br>seamless
+          and accurate service calculations running in < 1msec to be used in proprietary trading software</li>
+        <li>i also worked on enhancing market data access efficiency by spearheading the design of robust C++ concurrency protocols</li>
+        <li>tools used: c++, linux, jira</li>
+
+        <br>
+        <span id="experience-title"><b>fidelity investments — summer 2022 — boston, ma</b></span>
+        <li>i designed and built an internal AutoSys job management application (containing 90,000 jobs) using Angular and Django</li>
+        <li>i implemented functions to query an Oracle database along with a REST API to send queried job information to front-end <br>for user control and management</li>
+        <li>further, i collaborated on running Jenkins CI/CD pipelines to automate migration of the application from on-premise to <br>AWS S3,
+          and hosting production-level Django EC2 Linux server with Nginx and Gunicorn</li>
+        <li>tools used: angular, django, linux, aws, jenkins, oracle</li>
+
+
+        <br>
+        <span id="experience-title"><b>cornell data science — ithaca, ny</b></span>
+        <li>i'm currently working on a front-facing sports market making application using react and flask</li>
+        <li>i've also built a cloud options trading bot leveraging aws and docker to support a long-straddle options trading strategy</u>
         </li>
       </ul>
     </div>
 
-    <div id="outside-of-school">
-      outside of school
-      <ul>
-        <li>i enjoy finding <a href="https://open.spotify.com/user/da9om7ik3jlnwbujz2zzpoyno" target="_blank"
-            rel="noopener noreferrer">new music to listen to</a>,
-          lifting, and playing with my dog rafa!</li>
-      </ul>
-    </div>
 
-    <div id="connect">
+    <div id="connect" class="content">
       let's connect... <br>
       <a href="assets/Rohan C. Shah resume.pdf" target="_blank" rel="noopener noreferrer">resume</a> ·
       <a href="https://www.linkedin.com/in/rohan-c-shah/" target="_blank" rel="noopener noreferrer">linkedin</a> ·

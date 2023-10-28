@@ -53,6 +53,10 @@ html {
   animation: fadeIn 5s;
 }
 
+#navbar{
+  color: #333333;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -90,3 +94,4 @@ ul li:before {
   position: absolute;
   margin-left: -20px;
 }
+
