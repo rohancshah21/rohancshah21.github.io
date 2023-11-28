@@ -13,18 +13,22 @@
 
 <body>
 
-  <div id="first">
-    hi, i'm rohan
+  <div id="first-container">
+    <div id="first">
+      hi, i'm rohan
+    </div>
   </div>
+
 
   <div id="wrapper">
 
 
     <div class="navbar" id="navbar">
-      <a onclick="showHome()">Home</a>
-      <a onclick="showAboutMe()">About Me</a>
-      <a onclick="showExperiences()">Experiences</a>
-      <a onclick="showContact()">Contact</a>
+      <a onclick="showHome()" id="nav-home">Home</a>
+      <a onclick="showAboutMe()" id="none-home">About Me</a>
+      <a onclick="showProjects()" id="none-home">Projects</a>
+      <a onclick="showExperiences()" id="none-home">Experiences</a>
+      <a onclick="showContact()" id="none-home">Contact</a>
     </div>
     <hr>
 
@@ -34,6 +38,7 @@
       hey! my name's rohan, and i'm a current junior at Cornell University!
       <ul>
         <li>i'm a student at <u>cornell university</u> studying computer science in the college of engineering</li>
+        <li>professionally, i'm interested in <b>software engineering</b> and <b>quantitative finance</b></li>
       </ul>
 
       outside of school
@@ -57,7 +62,8 @@
           to
           optimally trade
         </li>
-        <li>technically, i'm proficient in python and java, with experience in javascript/typescript, c++, html/css, sql</li>
+        <li>technically, i'm proficient in python and java, with experience in javascript/typescript, c++, html/css, sql
+        </li>
       </ul>
     </div>
 
@@ -65,17 +71,23 @@
       stuff i've done
       <ul>
         <span id="experience-title"><b>trillium trading — summer 2023 — new york city, ny</b></span>
-        <li>i developed a proxy service capable of calculating implied volatilities and options Greeks for over 6,000 listed options</li>
-        <li>using c++, i integrated real-time OPRA and UTP market data feeds into proxy connected through a Linux server, enabling <br>seamless
+        <li>i developed a proxy service capable of calculating implied volatilities and options Greeks for over 6,000
+          listed options</li>
+        <li>using c++, i integrated real-time OPRA and UTP market data feeds into proxy connected through a Linux
+          server, enabling <br>seamless
           and accurate service calculations running in < 1msec to be used in proprietary trading software</li>
-        <li>i also worked on enhancing market data access efficiency by spearheading the design of robust C++ concurrency protocols</li>
+        <li>i also worked on enhancing market data access efficiency by spearheading the design of robust C++
+          concurrency protocols</li>
         <li>tools used: c++, linux, jira</li>
 
         <br>
         <span id="experience-title"><b>fidelity investments — summer 2022 — boston, ma</b></span>
-        <li>i designed and built an internal AutoSys job management application (containing 90,000 jobs) using Angular and Django</li>
-        <li>i implemented functions to query an Oracle database along with a REST API to send queried job information to front-end <br>for user control and management</li>
-        <li>further, i collaborated on running Jenkins CI/CD pipelines to automate migration of the application from on-premise to <br>AWS S3,
+        <li>i designed and built an internal AutoSys job management application (containing 90,000 jobs) using Angular
+          and Django</li>
+        <li>i implemented functions to query an Oracle database along with a REST API to send queried job information to
+          front-end <br>for user control and management</li>
+        <li>further, i collaborated on running Jenkins CI/CD pipelines to automate migration of the application from
+          on-premise to <br>AWS S3,
           and hosting production-level Django EC2 Linux server with Nginx and Gunicorn</li>
         <li>tools used: angular, django, linux, aws, jenkins, oracle</li>
 
@@ -83,17 +95,19 @@
         <br>
         <span id="experience-title"><b>cornell data science — ithaca, ny</b></span>
         <li>i'm currently working on a front-facing sports market making application using react and flask</li>
-        <li>i've also built a cloud options trading bot leveraging aws and docker to support a long-straddle options trading strategy</u>
+        <li>i've also built a cloud options trading bot leveraging aws and docker to support a long-straddle options
+          trading strategy</u>
         </li>
       </ul>
     </div>
-
 
     <div id="connect" class="content">
       let's connect... <br>
       <a href="assets/Rohan C. Shah resume.pdf" target="_blank" rel="noopener noreferrer">resume</a> ·
       <a href="https://www.linkedin.com/in/rohan-c-shah/" target="_blank" rel="noopener noreferrer">linkedin</a> ·
       <a href="https://github.com/rohancshah21/" target="_blank" rel="noopener noreferrer">github</a>
+      <br>
+      shoot me an <a href=mailto:"rcs353@cornell.edu"> email</a> to learn more!
     </div>
     <hr>
     <br>

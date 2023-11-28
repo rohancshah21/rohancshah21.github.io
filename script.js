@@ -27,6 +27,10 @@ function showExperiences() {
   showContent('stuff-ive-done');
 }
 
+function showProjects(){
+  showContent('projects');
+}
+
 function showContact() {
   showContent('connect');
 }
