@@ -7,12 +7,16 @@ function showContent(contentId) {
   const contents = document.querySelectorAll('.content');
   contents.forEach(content => {
     content.style.display = 'none';
+    content.style.animation = 'none'; // Add this line
   });
 
   const targetContent = document.getElementById(contentId);
   if (targetContent) {
     targetContent.style.display = 'block';
+    // Re-trigger the animation
+    setTimeout(() => targetContent.style.animation = '', 0); // Add this line
   }
+
 }
 
 function showHome() {

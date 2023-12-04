@@ -234,6 +234,22 @@ ul li:before {
   cursor: pointer;
 }
 
+.content {
+  display: none;
+  /* Make sure content is initially hidden */
+  animation: fadeInContent 1s ease-in;
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 #openModal,
 #openModal2,
 #openModal3,
@@ -248,4 +264,8 @@ ul li:before {
 #openModal4:hover,
 #openModal5:hover {
   text-decoration: underline;
+}
+
+#experience-title {
+  color: rgb(45, 45, 45)
 }
